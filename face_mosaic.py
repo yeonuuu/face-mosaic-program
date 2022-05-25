@@ -5,7 +5,6 @@ img = cv2.imread('couple.jpg')
 cv2.imshow('original image', img)
 
 
-
 def mosaic(src, ratio=0.1):
     small = cv2.resize(src, None, fx=ratio, fy=ratio, interpolation=cv2.INTER_NEAREST)
     return cv2.resize(small, src.shape[:2][::-1], interpolation=cv2.INTER_NEAREST)
