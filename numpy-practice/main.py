@@ -20,7 +20,7 @@ c = np.divide(a, b)
 print(c)
 
 
-print(b.shape)
+print(a.shape)
 
 d = np.array(range(50)).reshape((10,5))
 print(d)
