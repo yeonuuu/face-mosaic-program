@@ -22,7 +22,7 @@ def result_plt(result):
     plt.show()
 
 
-x0 = 1.5
+x0 = 1.0
 result = minimize(quad_func, x0, method='SLSQP', callback=print, options={'disp' : True})
 
 result_plt(result)
